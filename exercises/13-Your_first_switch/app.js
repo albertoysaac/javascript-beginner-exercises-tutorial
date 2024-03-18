@@ -2,9 +2,19 @@ function getColor(selection)
 {
 	switch(selection){
 		// Add more options here
-	    default:
-	    	return false;  //returns false because the user picked an unavailable color
-	    break;               
+	    case 'red':
+	    	console.log('available');
+			return true;  
+	    	
+		case 'green':
+			console.log('available');  
+	    	return true;  
+		case 'blue':
+			console.log('available');  
+	    	return true;
+		default:
+			console.log('Sorry, that color is not available');
+			return false;
 	}
 }
 
